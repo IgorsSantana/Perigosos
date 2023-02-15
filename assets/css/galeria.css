@@ -1,5 +1,5 @@
 .galeria {
-    padding-top: 70px;
+    padding-top: 100px;
     height: 100%;
     display: none;
 }
@@ -20,4 +20,10 @@
 }
 .galeria.open-page {
     display: block;
+}
+
+@media screen and (max-width: 800px) {
+    .galeria .images img {
+        width: 40%;
+    }
 }
