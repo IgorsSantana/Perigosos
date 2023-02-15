@@ -1,0 +1,112 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Oswald', sans-serif;
+    color: #ffffff;
+}
+* h2 {
+    font-weight: 500;
+    font-size: 50px;
+}
+* p {
+    font-weight: 400;
+    font-size: 20px;
+}
+body {
+    background-image: linear-gradient( to right, #ff7b00, #ce5a24, #f55a2b);
+    min-width: 550px;
+}
+header {
+    background-color: #ff3c00;
+    width: 100%;
+    height: 70px;
+    position: fixed;
+    z-index: 998;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+header img {
+    height: 60px;
+    margin: 0 50px;
+}
+header .button {
+    border: none;
+    width: 5%;
+    height: 70px;
+    background: #ff3c00;
+    font-size: 20px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+header .button.selecionado {
+    background: #fa501d;
+}
+header .button:hover {
+    background: #fa501d;
+    font-size: 23px;
+    transition: all 0.2s ease-in-out;
+}
+main .inicio {
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+main .inicio .image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+main .inicio img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+
+}
+main .inicio .infos {
+    margin: 0 50px;
+}
+main .inicio .infos h1 {
+    font-weight: 700;
+    font-size: 100px;
+}
+main .integrantes-perigosos {
+    margin: 50px 50px 50px 50px;
+}
+main .integrantes-perigosos .integrantes {
+    display: flex;
+}
+main .integrantes-perigosos .integrantes h3 {
+    display: none;
+}
+main .integrantes-perigosos .integrantes img {
+    margin-top: 50px;
+    width: 100%;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+main .integrantes-perigosos .integrantes img:hover {
+    scale: 120%;
+    transition: all 0.2s ease-in-out;
+}
+footer {
+    background-color: #ff3c00;
+    width: 100%;
+    height: 500px;
+}
+
+@media screen and (max-width: 800px) {
+    main .integrantes-perigosos .integrantes {
+        flex-direction: column;
+    }
+    main .integrantes-perigosos .integrantes img {
+        margin-top: 10px;
+    }
+    header .button {
+        font-size: 10px;
+    }
+    header .button:hover {
+        font-size: 13px;
+    }
+}
+
