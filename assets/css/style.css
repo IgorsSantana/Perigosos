@@ -73,18 +73,27 @@ main .inicio .infos h1 {
     font-weight: 700;
     font-size: 100px;
 }
-main .integrantes-perigosos {
-    margin: 50px 50px 50px 50px;
+main .integrantes-perigosos h2 {
+    margin: 0 50px;
+}
+main .integrantes-perigosos .mae-integrantes {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 50px;
 }
 main .integrantes-perigosos .integrantes {
     display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
 }
 main .integrantes-perigosos .integrantes h3 {
     display: none;
 }
 main .integrantes-perigosos .integrantes img {
     margin-top: 50px;
-    width: 100%;
+    width: 10%;
     cursor: pointer;
     transition: all 0.2s ease-in-out;
 }
@@ -111,7 +120,7 @@ footer button {
     border: none;
     background: black;
     width: 100%;
-    height: 5vh;
+    height: 10vh;
     font-size: 35px;
     border-radius: 20px;
     cursor: pointer;
@@ -130,8 +139,8 @@ footer button:hover {
         justify-content: center;
     }
     main .integrantes-perigosos .integrantes img {
-        margin: 10px 0 0 0;
-        width: 100%;
+        margin: 20px;
+        width: 40%;
     }
     main .integrantes-perigosos .integrantes img:hover {
         scale: 100%;
@@ -145,6 +154,7 @@ footer button:hover {
     }
     footer button {
         font-size: 20px;
+        height: 5vh;
     }
 }
 
