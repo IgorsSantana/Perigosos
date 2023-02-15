@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Oswald', sans-serif;
+    color: #ffffff;
+}
+* h2 {
+    font-weight: 500;
+    font-size: 50px;
+}
+* p {
+    font-weight: 400;
+    font-size: 20px;
+}
+body {
+    background-image: linear-gradient( to right, #ff7b00, #ce5a24, #f55a2b);
+    min-width: 550px;
+    min-height: 100vh;
+}
+header {
+    background-color: #ff3c00;
+    width: 100%;
+    height: 70px;
+    position: fixed;
+    z-index: 998;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 5px 40px #000000;
+}
+header img {
+    height: 60px;
+    margin: 0 50px;
+}
+header .button {
+    border: none;
+    width: 5%;
+    height: 70px;
+    background: #ff3c00;
+    font-size: 100%;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+header .button.selecionado {
+    background: #fa501d;
+    border-bottom: solid 3px #ffffff;
+}
+header .button:hover {
+    background: #fa501d;
+    font-size: 120%;
+    transition: all 0.2s ease-in-out;
+}
+main .inicio {
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+main .inicio .image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+main .inicio img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+
+}
+main .inicio .infos {
+    margin: 0 50px;
+}
+main .inicio .infos h1 {
+    font-weight: 700;
+    font-size: 100px;
+}
+main .integrantes-perigosos {
+    margin: 50px 50px 50px 50px;
+}
+main .integrantes-perigosos .integrantes {
+    display: flex;
+}
+main .integrantes-perigosos .integrantes h3 {
+    display: none;
+}
+main .integrantes-perigosos .integrantes img {
+    margin-top: 50px;
+    width: 100%;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+main .integrantes-perigosos .integrantes img:hover {
+    scale: 120%;
+    transition: all 0.2s ease-in-out;
+}
+footer {
+    background-color: #ff3c00;
+    width: 100%;
+    height: 500px;
+}
+footer .mae-button {
+    padding-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+footer .button-instagram {
+    width: 20%;
+    text-align: center;
+}
+footer button {
+    border: none;
+    background: black;
+    width: 100%;
+    height: 10vh;
+    font-size: 35px;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: all 0.2s ease-in-out;
+}
+footer button:hover {
+    background-color: #ffffff;
+    color: #000000;
+    transition: all 0.2s ease-in-out;
+}
+
+@media screen and (max-width: 800px) {
+    main .integrantes-perigosos .integrantes {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    main .integrantes-perigosos .integrantes img {
+        margin: 10px 0 0 0;
+        width: 100%;
+    }
+    main .integrantes-perigosos .integrantes img:hover {
+        scale: 100%;
+    }
+    header .button {
+        font-size: 80%;
+    }
+    header .button:hover {
+        font-size: 90%;
+    }
+}
+
