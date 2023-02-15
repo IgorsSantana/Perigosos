@@ -15,6 +15,7 @@
 body {
     background-image: linear-gradient( to right, #ff7b00, #ce5a24, #f55a2b);
     min-width: 550px;
+    min-height: 100vh;
 }
 header {
     background-color: #ff3c00;
@@ -35,7 +36,7 @@ header .button {
     width: 5%;
     height: 70px;
     background: #ff3c00;
-    font-size: 20px;
+    font-size: 100%;
     cursor: pointer;
     transition: all 0.2s ease-in-out;
 }
@@ -44,7 +45,7 @@ header .button.selecionado {
 }
 header .button:hover {
     background: #fa501d;
-    font-size: 23px;
+    font-size: 120%;
     transition: all 0.2s ease-in-out;
 }
 main .inicio {
@@ -97,16 +98,21 @@ footer {
 
 @media screen and (max-width: 800px) {
     main .integrantes-perigosos .integrantes {
-        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
     }
     main .integrantes-perigosos .integrantes img {
-        margin-top: 10px;
+        margin: 10px 0 0 0;
+        width: 100%;
+    }
+    main .integrantes-perigosos .integrantes img:hover {
+        scale: 100%;
     }
     header .button {
-        font-size: 10px;
+        font-size: 80%;
     }
     header .button:hover {
-        font-size: 13px;
+        font-size: 90%;
     }
 }
 

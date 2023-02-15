@@ -190,6 +190,6 @@
         transform: translate3d(0,0,0);
     }
 }
-.abrir .modal {
+.abrir-modal .modal {
     animation: abrirmodal 0.2s;
 }
