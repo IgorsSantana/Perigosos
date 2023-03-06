@@ -1,0 +1,29 @@
+.galeria {
+    padding-top: 100px;
+    height: 100%;
+    display: none;
+}
+.galeria .images {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.galeria .images img {
+    width: 20%;
+    margin: 20px;
+}
+.main {
+    display: none;
+}
+.main.open-page {
+    display: block;
+}
+.galeria.open-page {
+    display: block;
+}
+
+@media screen and (max-width: 800px) {
+    .galeria .images img {
+        width: 40%;
+    }
+}
