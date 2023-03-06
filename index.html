@@ -17,14 +17,28 @@
 </head>
 <body>
     <header>
+        <!-- Center -->
         <button onclick="abrirHome()" class="button selecionado" id="button-home">Home</button>
         <img src="./assets/images/logo-boi.png" alt="logo-boi">
         <button onclick="abrirGaleria()" class="button" id="button-galeria">Galeria</button>
+
+        <!-- Menu -->
+        <img src="./assets/images/menu-icon.png" alt="menu-icon" class="menu-icon" onclick="abrirMenu()">
+        <div id="menu" class="menu">
+            <button onclick="fecharMenu()">Fechar</button>
+            <ul>
+                <li onclick="abrirHome(), fecharMenu()"><a href="#">Home</a></li>
+                <li onclick="abrirGaleria(), fecharMenu()"><a href="#">Galeria</a></li>
+                <li><a href="https://www.instagram.com/perigosoos/" target="_blank">Instagram</a></li>
+                <li onclick="fecharMenu()"><a href="#">Outros</a></li>
+            </ul>
+        </div>
     </header>
 
     <main class="main open-page" id="main">
 
         <div class="background">
+
             <!-- Parte de cima -->
             <div class="inicio">
                 <div class="image">
@@ -36,6 +50,7 @@
                     <p>Perigosos, é um grupo de amigos em Bicas MG, que por mais que todos sejam adultos, ainda tem aquele espirito de "quinta série".</p>
                 </div>
             </div>
+            
             <!-- Integrantes -->
             <div class="integrantes-perigosos">
                 <div class="sub-title">
@@ -153,6 +168,8 @@
         </div>
     </div>
 
+    
+
     <footer>
         <div class="mae-button">
             <div class="button-instagram">
@@ -164,5 +181,6 @@
     
     <script src="./assets/js/script-modal.js"></script>
     <script src="./assets/js/script-galeria.js"></script>
+    <script src="./assets/js/script-menu.js"></script>
 </body>
 </html>
